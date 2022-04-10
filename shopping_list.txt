@@ -2,4 +2,4 @@ tomatoes x3
 bread x1
 milk x2
 cheese x2
-fish x1
+fish x4
