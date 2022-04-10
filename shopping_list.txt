@@ -1,5 +1,5 @@
 tomatoes x3
-bread x1
+bread x5
 milk x2
 butter x2
 fish x1
