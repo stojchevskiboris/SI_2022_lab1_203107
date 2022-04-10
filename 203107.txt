@@ -1,0 +1,145 @@
+4. git clone https://github.com/stojchevskiboris/SI_2022_lab1_203107.git
+
+5. git add shopping_list.txt
+   git commit -m "Add 5 items to the shopping list"
+
+6. git add shopping_list.txt
+   git commit -m "Add 5 items to the shopping list"
+
+7. git branch branch1
+   git branch branch2
+
+8. git log
+commit 9ff22bf03947920a17a8701e1da23698ec5a697c (HEAD -> master, branch2, branch1)
+Author: stojchevskiboris <stojcevskib.02@gmail.com>
+Date:   Sun Apr 10 17:12:35 2022 +0200
+
+    Add quantities to the items.
+
+commit 07b8aa1b8aff7766f2f30fde3f86e32e592f71ae
+Author: stojchevskiboris <stojcevskib.02@gmail.com>
+Date:   Sun Apr 10 17:09:24 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 05001d58832081514491f260bb3e37667e8c65ad (origin/master, origin/HEAD)
+Author: stojchevskiboris <100217632+stojchevskiboris@users.noreply.github.com>
+Date:   Sun Apr 10 17:01:04 2022 +0200
+
+    Initial commit
+
+commit 2ac9c58157401a0c3bbb67606b08e235167c066d
+Author: stojchevskiboris <100217632+stojchevskiboris@users.noreply.github.com>
+Date:   Sun Apr 10 16:59:26 2022 +0200
+
+    Initial commit
+
+9. git push
+   git push origin branch1
+   git push origin branch2
+
+10. git checkout branch1
+
+11. git add shopping_list.txt
+    git commit -m "Change quantity of item #5"
+
+12. git checkout master
+
+13. git add shopping_list.txt
+    git commit -m "Change quantity of item #2"
+
+14. git push
+    git push origin branch1
+    git push origin branch2
+
+15. git checkout branch2
+
+16. git add shopping_list.txt
+    git commit -m "Modify item #4"
+
+17. git log
+commit 39c6832b7221ca28c2a838e926683a1bb7bba270 (HEAD -> branch2)
+Author: stojchevskiboris <stojcevskib.02@gmail.com>
+Date:   Sun Apr 10 17:26:36 2022 +0200
+
+    Modify item #4
+
+commit 9ff22bf03947920a17a8701e1da23698ec5a697c (origin/branch2)
+Author: stojchevskiboris <stojcevskib.02@gmail.com>
+Date:   Sun Apr 10 17:12:35 2022 +0200
+
+    Add quantities to the items.
+
+commit 07b8aa1b8aff7766f2f30fde3f86e32e592f71ae
+Author: stojchevskiboris <stojcevskib.02@gmail.com>
+Date:   Sun Apr 10 17:09:24 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 05001d58832081514491f260bb3e37667e8c65ad
+Author: stojchevskiboris <100217632+stojchevskiboris@users.noreply.github.com>
+Date:   Sun Apr 10 17:01:04 2022 +0200
+
+    Initial commit
+
+commit 2ac9c58157401a0c3bbb67606b08e235167c066d
+Author: stojchevskiboris <100217632+stojchevskiboris@users.noreply.github.com>
+Date:   Sun Apr 10 16:59:26 2022 +0200
+
+    Initial commit
+
+18. git rebase -i HEAD~1
+    git add shopping_list.txt
+    git commit --amend
+    git rebase --continue
+
+19. git log
+commit cf59a16445edd0721ba4b3ae30818bfbb63370b7 (HEAD -> branch2)
+Author: stojchevskiboris <stojcevskib.02@gmail.com>
+Date:   Sun Apr 10 17:26:36 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 9ff22bf03947920a17a8701e1da23698ec5a697c (origin/branch2)
+Author: stojchevskiboris <stojcevskib.02@gmail.com>
+Date:   Sun Apr 10 17:12:35 2022 +0200
+
+    Add quantities to the items.
+
+commit 07b8aa1b8aff7766f2f30fde3f86e32e592f71ae
+Author: stojchevskiboris <stojcevskib.02@gmail.com>
+Date:   Sun Apr 10 17:09:24 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 05001d58832081514491f260bb3e37667e8c65ad
+Author: stojchevskiboris <100217632+stojchevskiboris@users.noreply.github.com>
+Date:   Sun Apr 10 17:01:04 2022 +0200
+
+    Initial commit
+
+commit 2ac9c58157401a0c3bbb67606b08e235167c066d
+Author: stojchevskiboris <100217632+stojchevskiboris@users.noreply.github.com>
+Date:   Sun Apr 10 16:59:26 2022 +0200
+
+    Initial commit
+
+20. git checkout master
+    git merge branch1
+- Не се случија никакви конфликти при спојување на гранките master и branch1
+- Употребена е fast-forwading стратегија
+
+21. git rebase branch2
+    git add shopping_list.txt
+    git rebase --continue
+- Да, се случија конфликти
+- Се разрешија преку git rebase 
+- Употребена е recursive-merge стратегија
+
+22. git add 203107.txt
+    git commit -m "Add docs"
+
+23. git pull
+    git push
+    git push origin branch1
+    git push origin branch2
