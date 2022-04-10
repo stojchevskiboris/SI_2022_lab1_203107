@@ -1,5 +1,5 @@
-tomatoes
-bread
-milk
-cheese
-fish
+tomatoes x3
+bread x1
+milk x2
+cheese x2
+fish x1
